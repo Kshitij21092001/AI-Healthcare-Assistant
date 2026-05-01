@@ -1,8 +1,8 @@
-# 🏥 Healthcare Assistant
+# Healthcare Assistant
 
 A comprehensive AI-powered healthcare assistant designed to analyze medical lab reports, extract key findings, provide clinical evaluations, assess risks, suggest specialists, and facilitate secure doctor-patient communication via email. Built with modern AI technologies and a user-friendly interface for seamless medical data processing.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
 - [Architecture](#architecture)
@@ -17,44 +17,44 @@ A comprehensive AI-powered healthcare assistant designed to analyze medical lab 
 - [License](#license)
 - [Disclaimer](#disclaimer)
 
-## ✨ Features
+## Features
 
-### 🔬 Medical Report Analysis
+### Medical Report Analysis
 - **OCR Processing**: Extracts text from multi-page PDF medical reports using Azure Form Recognizer
 - **Structured Data Extraction**: Uses advanced LLM to parse and structure lab test results from any format
 - **Intelligent Parsing**: Handles various report layouts, units, and reference ranges automatically
 
-### 🤖 AI Clinical Evaluation
+### AI Clinical Evaluation
 - **Decision Support**: Provides conservative medical decision-making (consult/no-consult/uncertain)
 - **Confidence Scoring**: Quantifies AI confidence in recommendations
 - **Specialty Suggestions**: Recommends appropriate medical specialties based on findings
 
-### ⚠️ Risk Assessment
+### Risk Assessment
 - **Dynamic Scoring**: Calculates risk scores (0-100) based on abnormal findings
 - **Flag Detection**: Identifies critical abnormalities and flags
 - **Domain Insights**: Provides specialized insights (e.g., Vitamin D + PTH correlations)
 
-### 👨‍⚕️ Doctor Recommendations
+### Doctor Recommendations
 - **Specialty Matching**: Suggests doctors based on required medical specialties
 - **Contact Integration**: Provides doctor contact information for referrals
 
-### 📧 Secure Communication
+### Secure Communication
 - **Professional Email Generation**: Creates HTML-formatted reports for doctor communication
 - **Patient Consent Flow**: Manages email sharing with user confirmation
 - **Azure Logic App Integration**: Secure email delivery through enterprise-grade services
 
-### 💬 Interactive Chat Interface
+### Interactive Chat Interface
 - **Gradio UI**: Modern, responsive web interface
 - **Memory Persistence**: Maintains conversation history across sessions
 - **Multimodal Input**: Supports both text queries and file uploads
 - **General Health Queries**: Answers medical questions with context from uploaded reports
 
-### 🔄 Pipeline Orchestration
+### Pipeline Orchestration
 - **Modular Design**: Clean separation of concerns with independent engines
 - **Error Handling**: Robust error management and fallback mechanisms
 - **Scalable Architecture**: Designed for easy extension and maintenance
 
-## 🏗️ Architecture
+## Architecture
 
 The system follows a modular pipeline architecture with independent engines communicating through a central orchestrator.
 
@@ -155,7 +155,7 @@ graph TB
 - **Flake8**: Linting
 - **Git**: Version control
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -189,7 +189,7 @@ cp .env.example .env
 # Edit .env with your Azure credentials
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Required Environment Variables
 ```env
@@ -219,7 +219,7 @@ DEFAULT_USER_EMAIL=user@example.com
 - **Memory Settings**: Adjust SQLite database path in `memory_engine.py`
 - **UI Customization**: Modify themes and CSS in `app.py`
 
-## 🚀 Usage
+## Usage
 
 ### Starting the Application
 ```bash
@@ -258,7 +258,7 @@ doctors = result["doctors"]
 risk_score = result["risk"]["score"]
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 healthcare-assistant/
@@ -293,7 +293,7 @@ healthcare-assistant/
     └── api.md
 ```
 
-## 📚 API Reference
+## API Reference
 
 ### Core Functions
 
@@ -356,7 +356,7 @@ Retrieves doctor recommendations.
 #### `send_report_email(to_email, subject, body)`
 Sends professional email reports.
 
-## 🧪 Testing
+## Testing
 
 ### Running Tests
 ```bash
@@ -382,7 +382,7 @@ python -m pytest --cov=. --cov-report=html
 ### Sample Test Data
 Test files are located in the `tests/` directory with sample medical reports and expected outputs.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please follow these guidelines:
 
@@ -411,11 +411,11 @@ We welcome contributions! Please follow these guidelines:
 - **Internationalization**: Support multiple languages
 - **Integration**: Add support for additional medical systems
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **This software is for educational and research purposes only. It is NOT a substitute for professional medical advice, diagnosis, or treatment.**
 
